@@ -2,7 +2,6 @@
 
 ![Snake 3D Game](https://img.shields.io/badge/Version-1.0.0-brightgreen.svg)
 ![Three.js](https://img.shields.io/badge/Three.js-r128-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 Ein modernes 3D-Snake-Spiel, entwickelt mit Three.js, das ein immersives Spielerlebnis in einer dreidimensionalen Welt mit realistischen Bäumen und Hindernissen bietet.
 
@@ -24,8 +23,7 @@ Ein modernes 3D-Snake-Spiel, entwickelt mit Three.js, das ein immersives Spieler
 Snake-Game/
 │
 ├── music/
-│   └── music_background/
-│       └── epic-adventure-124947.mp3
+│   └── music_background.mp3
 │
 ├── index.html          # Haupt-HTML-Datei
 ├── style.css           # Styling und Responsive Design
@@ -36,15 +34,10 @@ Snake-Game/
 
 1. **Repository klonen**:
    ```bash
-   git clone https://github.com/your-username/snake-3d-game.git
-   cd snake-3d-game
+   git clone https://github.com/Clintbr/Snake-Game.git
+   cd Snake-Game
    ```
-
-2. **Musikdatei hinzufügen**:
-   - Laden Sie die Hintergrundmusik von [Pixabay](https://pixabay.com/music/epic-adventure-124947/) herunter
-   - Speichern Sie die Datei im Ordner `music/music_background/` als `epic-adventure-124947.mp3`
-
-3. **Spiel starten**:
+2. **Spiel starten**:
    - Öffnen Sie die `index.html` in einem modernen Webbrowser
    - Oder nutzen Sie einen lokalen Server:
      ```bash
@@ -93,7 +86,7 @@ const renderer = new THREE.WebGLRenderer({ canvas: document.getElementById('game
 #### 3. Musiksystem
 ```javascript
 // Hintergrundmusik
-let backgroundMusic = new Audio('music/music_background/epic-adventure-124947.mp3');
+let backgroundMusic = new Audio('music/music_background.mp3');
 backgroundMusic.loop = true;
 backgroundMusic.volume = 0.5;
 ```
@@ -144,21 +137,15 @@ Ersetzen Sie die Musikdatei im Ordner `music/music_background/` und aktualisiere
 2. **Mobile Performance**: Auf älteren Mobilgeräten kann die Performance eingeschränkt sein
 3. **Touch-Steuerung**: Die Steuerung auf Touch-Geräten ist weniger präzise
 
-## 📄 Lizenz
+## 👥 Projektentwickler
 
-Dieses Projekt steht unter der MIT-Lizenz. Siehe die [LICENSE](LICENSE)-Datei für Details.
-
-## 👥 Beitragende
-
-- [Ihr Name] - Hauptentwickler
-- [Mitwirkende] - Weitere Beitragende
+- Vorname: CLint Bryan
+- Name: Nguena
+-
 
 ## 🙏 Danksagungen
 
 - **Three.js Team** für die leistungsstarke 3D-Bibliothek
-- **Pixabay** für die bereitgestellte Hintergrundmusik
-- **Contributors** für Feedback und Verbesserungsvorschläge
-
 ---
 
 **Viel Spaß beim Spielen!** 🐍🎮
