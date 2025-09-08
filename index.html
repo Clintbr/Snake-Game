@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Snake Spiel - Mit Hintergrundmusik</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="game-container">
+    <canvas id="game-canvas"></canvas>
+
+    <div class="ui-overlay">
+        <div class="score-container">Punkte: <span id="score">0</span></div>
+        <div class="high-score">Highscore: <span id="high-score">0</span></div>
+    </div>
+
+    <div class="music-controls">
+        <button id="music-toggle" class="music-btn">Musik: Ein</button>
+        <div class="volume-control">
+            <span>🔈</span>
+            <input type="range" id="volume-slider" class="volume-slider" min="0" max="1" step="0.1" value="0.5">
+        </div>
+    </div>
+
+    <div class="instructions">
+        <p>Verwende die Pfeiltasten oder W,A,S,D, um die Schlange zu steuern</p>
+    </div>
+
+    <div class="boundary-indicator" id="boundary-warning"></div>
+
+    <div class="controls">
+        <button id="start-button">Start</button>
+        <button id="pause-button">Pause</button>
+        <button id="restart-button">Neustart</button>
+    </div>
+
+    <div class="game-over" id="game-over">
+        <h2>Game Over</h2>
+        <p>Dein Punktestand: <span id="final-score">0</span></p>
+        <button id="restart-game-button">Nochmal spielen</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+<!-- Three.js Bibliothek -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.min.js"></script>
+
+</body>
+</html>
