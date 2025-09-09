@@ -5,7 +5,7 @@
 
 Ein modernes 3D-Snake-Spiel, entwickelt mit Three.js, das ein immersives Spielerlebnis in einer dreidimensionalen Welt mit realistischen Bäumen und Hindernissen bietet.
 
-![Snake 3D Game Screenshot](https://via.placeholder.com/800x400/1a2a3a/ffffff?text=Snake+3D+Game)
+![Snake 3D Game Screenshot](bilder/snake-3d-screenshot.png)
 
 ## 🎮 Funktionen
 
